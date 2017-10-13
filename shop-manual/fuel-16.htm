@@ -1,0 +1,228 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<HTML>
+
+<HEAD>
+<TITLE>Troubleshooting Fuel Supply Problems</TITLE>
+<META NAME="GENERATOR" CONTENT="Arachnophilia 3.8">
+<META NAME="FORMATTER" CONTENT="Arachnophilia 3.8">
+</HEAD>
+
+<NOSCRIPT>
+<BODY>
+</NOSCRIPT>
+
+<BODY BACKGROUND="" BGCOLOR="#ffffff" TEXT="#000000" LINK="#000080" VLINK="#800080" ALINK="#ff0000">
+
+<DIV align="center"><TABLE  BORDER CELLSPACING=1 BORDERCOLOR="#000000" CELLPADDING=9 WIDTH=100%>
+	<TR>
+		<TD valign="top" bgcolor="ff0000">
+			<DIV align="center"><B><U>FUEL-16, Troubleshooting Fuel Supply Problems</U></B></DIV>
+		</TD>
+	</TR>
+</TABLE></div><P>
+
+<P>
+
+<CENTER><A href="../pdf-manual/fuel-16.pdf" target="no window"><IMG src="../graphics/print.gif" width=24 height=24 border=0  alt=""></A><BR>
+Acrobat Printable Version<P></CENTER>
+
+<B><U>Introduction</U></B><P>
+
+This procedure is used to troubleshooting fuel supply problems including failure of the fuel pump to start during engine cranking. <P>
+
+<P>
+<CENTER>
+<TABLE width=100% border=1 bordercolor=000000 cellpadding=4 cellspacing=0>
+<TR bgcolor=ff0000>
+ <TD colspan=2><CENTER><B>Fuel Pump Not Starting During Engine Cranking</B></CENTER></TD>
+ </TR>
+<TR>
+<P>
+ <TD colspan=2><CENTER><U><B>NOTE</B></U></CENTER><P>
+Labelling on Early 944 (Pre-1985.5) terminal boards may be inconsistent, non-existent, or difficult to read. It may therefore be necessary to determine the terminals to be used for testing by looking at the labels by the stabs on the bottom of the relay. <P>
+
+</TD>
+ </TR>
+<TR bgcolor=ff0000>
+ <TD><CENTER><B>Checks</B></CENTER></TD>
+ <TD><CENTER><B>Comments</B></CENTER></TD>
+</TR>
+<TR>
+ <TD width=30% valign=top>Fuel Pump Fuse</TD>
+ <TD width=70%  valign=top>Pre-1985.5 944s - Fuse #2 on Auxiliary Fuse Panel<BR>
+1985.5 and Newer 944s and 968s - Fuse #34 on Central Electric Panel<P>
+</TD>
+</TR>
+<TR>
+ <TD valign=top>Bypass Power to Fuel Pump</TD>
+ <TD valign=top>Remove Fuel Pump / DME relay and install jumper to bypass the Fuel Pump / DME relay and DME computer and directly power the fuel pump. <P>
+<OL>
+All 944s and 968s - Terminal 30 to Terminal 87b<P>
+</OL>
+If the fuel pump starts, it indicates that the fuel pump, power supply to the fuel pump, and wiring from the relay panel to the fuel pump are good. Therefore, the problem lies in the fuel pump / DME relay,  the DME computer, or loss of the signals to the DME computer which cause the fuel pump to start or remaining running after it starts. If that is the case, continue troubleshooting with the next check. <P>
+
+If the fuel pump does not start, use an external 12 VDC power source to apply power directly to the fuel pump. If the fuel pump starts, check the wiring from the relay panel to the fuel pump and perform the Fuel Pump / DME Relay Primary Supply Voltage check.  <P>
+
+If the fuel pump does not start with power supplied directly at the pump, the fuel pump is bad and should be replaced.<P>
+</TD>
+</TR>
+<TR>
+ <TD valign=top>Fuel Pump / DME Relay Primary Supply Voltage</TD>
+ <TD valign=top>Remove the Fuel Pump / DME Relay and check for supply voltage (approximately 12 VDC) from the battery. Insert a male spade connector into the relay board terminal to make checking the voltage easier.<BR>
+<OL>
+All 944s and 968s - Terminal 30<BR>
+</OL><BR>
+If no voltage is present, the battery is dead or the wire from the battery to the relay panel is broken / disconnected.<P>
+
+</TD>
+</TR>
+<TR>
+ <TD valign=top>Fuel Pump / DME Relay Primary Primary Coil Voltage</TD>
+ <TD valign=top>Remove the fuel pump / DME relay, turn the ignition switch to the "run" position, and check for approximately 12 VDC at the relay primary coil terminal. <BR>
+<OL>
+All 944s and 968s - Terminal 86<BR>
+</OL> 
+If <B><U>no</U></B> voltage is present, the ignition switch is bad, there is a problem with the alarm system (if equipped), or there is a broken wire between the battery and ignition switch, between the ignition switch and alarm module (if equipped), or between the alarm module and fuel pump / DME relay. If equipped with an alarm system, bypass the alarm system using <A href="elect-23.htm">ELECT-23</A>, and repeat the test. <P>
+
+If primary coil voltage is present, turn the ignition key off, install the Fuel Pump / DME relay and proceed to the next test. <P>
+
+</TD>
+</TR>
+<TR>
+ <TD valign=top>Fuel Pump / DME Relay Primary Coil Activation</TD>
+ <TD valign=top>Disconnect the plug from the DME Computer. Turn the ignition switch to the "ON" position and check for supply voltage (approximately 12 VDC) from the Fuel Pump / DME Relay to the DME computer electrical connector. <P>
+<CENTER><IMG src="../graphics/dme_plug_1.jpg" width=332 height=355 border=0  alt=""></CENTER>
+<P>
+<OL>
+All 944s and 968s - Terminal 18 to Ground and Terminal 35 to Ground<BR>
+</OL></TD>
+</TR>
+<TR>
+ <TD colspan=2 bgcolor=ff0000><CENTER><B>Engine Cranking / Running Signals</B></CENTER></TD>
+</TR>
+<TR>
+ <TD colspan=2>For the fuel pump to start and remain running, for the ignition coil to develop secondary voltage, and for the injectors to fire, the DME computer must see an engine start signal or an engine running signal (greater than 200 RPM). When it does, it completes the circuit for the Fuel Pump / DME Relay secondary coil and the fuel pump starts. It also provides a ground or current flow path for the ignition coil primary and secondary coils. As a result, the current flow through the primary coil induces a voltage in the secondary coil. The voltage across the secondary coil is what is seen at the distributor. The engine cranking / running signal also goes to the injector drivers (2) which provide a ground or current flow path for the fuel injectors to open. The injectors are batch fired which means that all four injectors are fired together. On 944s, injectors 1 and 2 are wired together and injectors 3 and 4 are wired together. However, they are all powered from one injector driver inside the DME computer.<P>
+
+The engine start signal is normally generated by a combination of voltage from the ignition switch to the starter solenoid and a signal from the reference sensor. However, if the starter solenoid signal is not present, an engine cranking signal can be generated by the combination of the speed sensor and reference sensor signals. <P>
+ 
+If all of the previous tests have been completed satisfactorily, check for cranking signal inputs as described in the following steps.<P>
+</TD>
+ </TR>
+<TR>
+ <TD valign=top>Speed Sensor </TD>
+ <TD valign=top>Using an oscilloscope, check the speed sensor output from terminals 8 and 27 on the DME Computer plug. You should get a signal of > 2.5 V. The speed sensor generates an engine speed signal by counting the teeth on the flywheel ring gear. It produces two output pulses for each ring gear tooth. <P>
+
+If you don't have an oscilloscope, you can still check the speed sensor by doing a resistance check. <P>
+
+<CENTER><IMG src="../graphics/speed_reference_sensor_connectors.jpg" width=211 height=286 border=0  alt=""></CENTER><P>
+
+Check for 600-1600 ohms between terminals 8 and 27 on the sensor connector. Also, check for infinite resistance between terminals 27 and 23.<P>
+
+</TD>
+</TR>
+<TR>
+ <TD valign=top>Reference Sensor </TD>
+ <TD valign=top>Using an oscilloscope, check the speed sensor output from terminals 25 and 26 on the DME Computer plug. You should get a signal of > 2.0 V. The reference sensor generates an signal relative to engine position at TDC. It produces a single pulse triggered from a bolt cemented in the flywheel. <P>
+
+If you don't have an oscilloscope, you can still check the speed sensor by doing a resistance check. <P>
+
+<CENTER><IMG src="../graphics/speed_reference_sensor_connectors.jpg" width=211 height=286 border=0  alt=""></CENTER><P>
+
+Check for 600-1600 ohms between terminals 25 and 26 on the sensor connector. Also, check for infinite resistance between terminals 26 and 78.<P>
+
+</TD>
+</TR>
+
+<TR>
+ <TD valign=top>Starter Solenoid Signal</TD>
+ <TD valign=top>Turn the ignition switch OFF. Disconnect the DME computer plug. Connect a DC voltmeter from terminal 4 on the DME plug to ground. Attempt to crank the vehicle and check for approximately 12 VDC on the voltmeter. If no voltage is present, the ignition switch is bad or the wire from the ignition switch to the DME computer is broken. To check the wire, check the resistance from terminal 50 on the ignition switch electrical plug to terminal 4 on the DME plug. <P></TD>
+
+</TR>
+<TR>
+ <TD colspan=2 bgcolor=ff0000><B><CENTER>DME Computer Checks</CENTER></B></TD>
+</TR>
+<TR>
+ <TD valign=top>DME computer</TD>
+ <TD valign=top>The best way to test for a faulty DME computer is to swap it out with a known good DME computer. Now, most of us don't have the luxury of keeping a spare DME computer sitting around on the shelf. However, if you can borrow a DME computer from a friend for testing that's the best test for the DME. Just realize that you can't test an early 944 (pre-1985.5) using a DME computer from a later car or vice versa. They use different injectors. A later DME will not fire early injectors at all. An early DME <B>MAY</B> fire the injectors in a later car but, the current draw will be excessive and you could potentially damage the DMEs injector drivers. Even if you don't damage the injector drivers, they will likely shut down after a few cycles due to the excessive current draw.<P>
+
+Other than that, there's actually very little that can be done to check the operation of the DME computer. However, about the only time a 944 DME computer fails is when it's had water intrusion due to a leaking battery tray or if it has bad solder joints which are easily repairable.  If you are having trouble getting the car to start and you suspect the DME computer may be the cause, you can sometimes get the car to start by tapping on the outside of the DME computer case with a rubber mallet. <P>
+
+If you suspect the DME computer is causing problems, remove the DME computer from the car and inspect for broken solder joints. When you open the DME computer, you'll find two circuit boards mounted face-to-face inside the box. At one end, the two circuit boards are bridge together by a ribbon cable and at the other they're plugged into the main plug terminal. You'll need to separate the two circuit boards, slide one of the boards out of the connector, and lay the boards open (like a book) to inspect the solder joints. For instructions on how to do this, refer to the appropriate sections of <A href="dme-02.htm">DME-02</A>,  <U>DME Control Unit Chip Installation (Including KLR Chip for Turbos)</U>. When you inspect the DME for bad solder joints, pay particular attention to the solder joints where the ribbon cable joint the two circuit boards. Those tend to be a common source or problems. <P>
+</TD>
+
+</TR>
+
+</TABLE>
+</CENTER><P>
+
+
+<TABLE width=100% border=1 bordercolor=000000 cellpadding=4 cellspacing=0>
+<TR>
+ <TD colspan=3 bgcolor=ff0000><CENTER><B>Other Fuel Related Problems</B></CENTER></TD>
+ </TR>
+<TR bgcolor=ff0000>
+ <TD width=25% valign=top><CENTER><B>Symptoms</B></CENTER></TD>
+ <TD width=30% valign=top><CENTER><B>Possible Cause</B></CENTER></TD>
+ <TD width=45% valign=top><CENTER><B>Checks</B></CENTER></TD>
+</TR>
+<TR>
+ <TD valign=top>Good fuel pressure but no fuel to engine.</TD>
+ <TD valign=top>Injectors Not Firing</TD>
+ <TD valign=top>Crank engine while listening for clicking from injectors. Injectors should fire twice for each revolution of the engine.<P>
+</TD>
+</TR>
+<TR >
+ <TD rowspan=3 valign=top>Good fuel pressure at fuel rail but injectors not firing.</TD>
+ <TD valign=top>No voltage to injectors.</TD>
+ <TD valign=top>Perform the following to check for fuel injector supply voltage:<P>
+<OL>
+ <LI>Disconnect on fuel injector plug.
+ <LI>Turn the ignition switch to the ON position.
+ <LI>Check for approximately 12 VDC on the injector plug terminals. There will be 12 VDC on one plug terminal and 0 VDC on the other terminal. <P>
+</OL>
+</TD>
+</TR>
+<TR>
+ <TD valign=top>Injector firing signal not present.</TD>
+ <TD valign=top>Perform checks of Speed Sensor, Reference Sensor, and Starter Solenoid Signal described in the Fuel Pump troubleshooting section.<P>
+ </TD>
+</TR>
+<TR>
+  <TD valign=top>Fuel Pressure too high.</TD>
+ <TD valign=top>When the fuel pressure runs too high, the fuel injectors draw too much current causing the injector drivers in the DME computer to shut down. Disconnect on fuel injector connector and attempt to crank the engine. If the engine starts, where it would not start with all injector leads connected, the fuel pressure regulator is bad and should be replaced. Disconnecting one fuel injector plug reduces the injector driver current sufficiently to get the injector drivers to fire. <P>
+</TD>
+</TR>
+<TR>
+ <TD rowspan=3 valign=top>Fuel Pressure Low</TD>
+ <TD valign=top>Clogged Fuel Filter.</TD>
+ <TD valign=top>If you don't know or can't verify the last time the fuel filter was changed, it's probably a good idea to replace the filter.<P>
+</TD>
+</TR>
+<TR>
+  <TD valign=top>Fuel Pump check valve stuck. Not a normal problem with low fuel pressure. Normally associated with fuel system depressurizing after shutdown as the typically stick open. However, if the car hasn't been run for an extended period of time, the check valve can get stuck closed. New fuel pumps normally come with a new check valve.<P>
+ </TD>
+ <TD valign=top>Replace check valve. <P>
+</TD>
+</TR>
+<TR>
+  <TD valign=top>Fuel Pump bad. <P>
+</TD>
+ <TD valign=top>Perform fuel pump delivery rate check. (<A href="fuel-04.htm">FUEL-04</A>) This assumes that the fuel filter and check valve are good. <P>
+</TD>
+</TR>
+
+</TABLE>
+
+
+<P>
+<P>
+Clark's Garage © 1998<P>
+
+<HR WIDTH="95%" ALIGN=CENTER><P>
+
+</BODY>
+
+</HTML>
+
+

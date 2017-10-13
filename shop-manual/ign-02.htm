@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+<TITLE>Speed and Reference Sensors - Checking, Replacement, and Adjustment</TITLE>
+<META NAME="GENERATOR" CONTENT="Arachnophilia 3.8">
+<META NAME="FORMATTER" CONTENT="Arachnophilia 3.8">
+</HEAD>
+<NOSCRIPT>
+<BODY>
+</NOSCRIPT>
+<BODY BACKGROUND="" BGCOLOR="#ffffff" TEXT="#000000" LINK="#000080" VLINK="#800080" ALINK="#ff0000">
+<DIV align="center"><TABLE  BORDER CELLSPACING=1 BORDERCOLOR="#000000" CELLPADDING=9 WIDTH=100%>
+	<TR>
+		<TD valign="top" bgcolor="ff0000">
+			<DIV align="center"><B><U>IGN-02, Speed and Reference Sensors - Information, Checking, Replacement, and Adjustment</U></B></DIV>
+		</TD>
+	</TR>
+</TABLE><P>
+</DIV>
+<P>
+
+<P>
+
+<CENTER><A href="../pdf-manual/ign-02.pdf" target="no window"><IMG src="../graphics/print.gif" width=24 height=24 border=0  alt=""></A><BR>
+Acrobat Printable Version<P></CENTER>
+
+<B><U>Introduction</U></B><P>
+
+The 944 Engine Managment system uses two crankshaft sensors. One (Reference Sensor) determines the #1 piston (front of the engine) position relative to Top Dead Center (TDC). When we refer to TDC, we are referring to the pistons highest position on the compression stroke. The second sensor (Speed Senors) counts the teeth on the flywheel and provides this signal in the form of pulses to the Engine Management Computer (DME) for engine speed in RPM (Revolutions Per Minute). Using the combination of the two signals, the DME can determine where the engine position is at any point in its cycle to apply the correct fuel injector cycling and correct ignition firing. The speed sensor's signal is also used as a safety feature by the DME (after initial cranking is complete) to shut down the fuel pump if engine speed falls below 300 RPM. <P>
+
+The speed and reference sensors can be one of the sources of a number of starting and running problems. This procedure will describe how to test the sensors for proper operation. It will also describe how to replace and adjust the sensor clearance if they are bad.<P>
+
+The sensors are located on the top of the clutch housing at the back of the engine. You can locate them by looking from the driver's side of the car (left-hand drive) down at the back of the engine near the firewall. Here's a picture showing what the sensors look like:<P>
+
+<CENTER><IMG src="../graphics/speed-reference-sensor-2.jpg" width=320 height=240 border=0  alt=""><P>
+</CENTER>
+
+
+<B><U>Tools</U></B><P>
+<UL>
+	<LI>10 mm socket or 5 mm Allen head socket (depending on type of sensor retaining bolt)
+	<LI>6 mm Allen head socket 
+	<LI>0.8 mm thick washer
+	<LI>Multi-Meter (for checking sensor resistances)
+	<LI>Oscilloscope (optional - for checking sensor output)
+</UL><P>
+
+<B><U>Checking Sensor Operation</U></B><P>
+
+<B><U>Sensor Resistance Checks</U></B><P>
+
+<OL>
+ <LI>Disconnect the Sensor plug connector at the back of the engine compartment. 
+ <LI>Using a multi-meter, check the sensor resistances as follows:<P>
+
+<CENTER><TABLE width=50% border=1 bordercolor=000000 cellpadding=4 cellspacing=0>
+<TR>
+ <TD colspan=2 bgcolor=ff0000><CENTER><B>Speed Sensor</B></CENTER></TD>
+ </TR>
+<TR>
+ <TD width=50%><CENTER><B>Terminals</B></CENTER></TD>
+ <TD width=50%><CENTER><B>Resistance Reading</B></CENTER></TD>
+</TR>
+<TR>
+ <TD><CENTER>8 - 27</CENTER></TD>
+ <TD><CENTER>600 - 1600 ohms</CENTER></TD>
+</TR>
+<TR>
+ <TD><CENTER>8 - 23</CENTER></TD>
+ <TD><CENTER>> 1 M-ohm</CENTER></TD>
+</TR>
+<TR>
+ <TD colspan=2 bgcolor=ff0000><CENTER><B>Reference Sensor</B></CENTER></TD>
+ </TR>
+<TR>
+ <TD width=50%><CENTER><B>Terminals</B></CENTER></TD>
+ <TD width=50%><CENTER><B>Resistance Reading</B></CENTER></TD>
+</TR>
+<TR>
+ <TD><CENTER>25 - 26</CENTER></TD>
+ <TD><CENTER>600 - 1600 ohms</CENTER></TD>
+</TR>
+<TR>
+ <TD><CENTER>25 - 78</CENTER></TD>
+ <TD><CENTER>> 1 M-ohm</CENTER></TD>
+</TR>
+</TABLE>
+</CENTER>
+
+<CENTER><IMG src="../graphics/speed_reference_sensor_connectors.jpg" width=211 height=286 border=0  alt=""></CENTER><P>
+</OL>
+
+<B><U>Sensor Operational Checks</U></B><P>
+
+An operational check of the speed and reference sensor output signals is the ultimate test to show whether the sensors are providing proper signals to the DME computer. However, to correctly perform the test, it requires an oscilloscope. We'll also discuss checking the output with a multimeter. <P>
+
+<OL>
+ <LI>Remove the fuel pump fuse.
+ <LI>Disconnect the DME computer plug. 
+ <LI>To check the speed sensor output, connect an oscilloscope from terminals 8 - 27 on the DME plug.
+ <LI>Crank the vehicle and check for a saw tooth wave output with a peak-to-peak voltage of > 2.5V. 
+ <LI>To check the reference sensor output, connect an oscilloscope from terminals 25 -26 on the DME plug.
+ <LI>Crank the vehicle and check for a periodic pulse with a peak-to-peak voltage of > 2.0V. The frequency of the pulses depends on the starter cranking speed.
+ <LI>If either voltage is less than the spec, check the sensor clearance using the section titled "Adjusting Sensor Clearance".<P>
+
+<CENTER><B><U>NOTE</U></B></CENTER><P>
+
+The sensor output signals can also be checked using a multi-meter. However, checking with a multi-meter will only tell you if there is and output signal and will not correctly measure the magnitude of the output voltage. So, it will not tell you if the signal is of significant magnitude to be sensed by the DME computer.<P>
+
+Another way to check the operation of the speed and reference sensors it to crank the vehicle and watch the response of the tachometer. If the tachometer jumps during cranking, the speed and reference sensors are probably good. If it does not jump, it indicates a problem with the speed and/or reference sensor or the DME computer. If it's the speed and/or reference sensors, it could be a bad sensor or the clearance gap is too large (see "Adjusting Sensor Clearance").<P>
+
+
+</OL>
+
+<B><U>Sensor Removal</U></B><P>
+<OL>
+<LI>Disconnect the battery negative lead.
+	<LI>Disconnect the speed and/or reference sensor connectors at the back of the intake manifold. 
+	<LI>Remove the sensor retaining bolt. Two different types of retaining bolts were used on the sensors. You'll need a 5 mm Allen head socket or 10 mm socket and ratchet to remove the sensor retaining bolts.<p>
+
+<CENTER><IMG src="../graphics/speed-reference-sensor-retaining-bolts.jpg" width=320 height=240 border=0  alt=""><P>
+</CENTER><p>
+
+	<LI>Twist the sensor from side-to-side as you pull up on it. Sometimes they'll get stuck and twisting will help free them. 
+</OL><P>
+
+<B><U>Sensor Installation</U></B><P>
+<OL>
+	<LI>If both sensors are to be replaced, check the labels on the wiring harness near the connector bracket and at the sensor mounting bracket to ensure correct installation. On the wiring harness the label will read as follows:<P>
+<UL>
+	<LI>DG = Speed Sensor 
+	<LI>BG = Reference Sensor
+</UL><P>
+The mounting bracket is labelled as follows:<P>
+<UL>
+	<LI>D = Speed Sensor
+	<LI>B = Reference Sensor
+</UL><P>
+It is sometimes difficult to read the marks on the mounting bracket. If you can not read the marks, the sensor closest to the firewall is the speed sensor.<P>
+
+<CENTER><B><U>NOTE</U></B></CENTER><P>
+
+I ran across a situation once while installing and engine in a 944 where the wire labels were missing from the wire connectors going to the DME Plug connector and the connectors had been removed from their mounting bracket. So, it was impossible to tell which wiring harness connector went to which sensor. To identify the connectors, I had to take resistance readings using an ohmmeter from the DME Plug connector to the sensor connectors. If you run into the same situation, you can use the diagrams below and an ohmmeter to determine which connector goes to which sensor.<P>
+
+<CENTER><IMG src="../graphics/dme_plug.jpg" width=320 height=156 border=0  alt=""></CENTER><P>
+
+
+	<LI>If the sensor mounting bracket was moved or you are unsure if the sensors are correctly aligned perform the "Adjusting Sensor Clearance" procedure below.
+	<LI>Install the sensors and retaining bolts. Torque retaining bolts to 8 Nm (6 ft-lb).
+</OL>
+<B><U>Adjusting Sensor Clearance</U></B><P>
+<OL>
+	<LI>The speed and reference sensors do not normally need adjustment even after replacement. Adjustment is only required if the sensor mounting bracket is removed or the mounting bracket locking bolt is inadvertently loosened.
+	<LI>Remove the speed sensor.
+	<LI>Loosen the mounting bracket locking bolt (6 mm Allen head) and pivot bolt and then re-tighten finger tight.<P>
+
+
+<CENTER><IMG src="../graphics/speed_reference_sensors.jpg" width=320 height=240 border=0  alt=""></CENTER><P>
+
+
+	<LI>Glue the 0.8 mm thick washer to the bottom of the sensor.<P>
+
+<CENTER><B><U>NOTE</U></B></CENTER><P>
+
+I have a clearance adjustment sensor. This is an old speed sensor with the electrical lead cut off to which I have washer permanently glued.<P>
+
+<CENTER><IMG src="../graphics/test_speed_sensor.jpg" width=320 height=240 border=0  alt=""></CENTER> <P>
+
+
+	<LI>Install the sensor with mounted washer and tighten. 
+	<LI>Move the bracket down until it stops again the ring gear on the flywheel.
+	<LI>Tighten the mounting bracket locking bolt and pivot bolt.
+	<LI>Remove the sensor with washer.
+	<LI>If the sensor is to be reused, pry the washer off the sensor.
+	<LI>Install sensor and torque retaining bolt to 8 Nm (6 ft-lb). 
+<LI>Reconnect battery.
+</OL>
+<P>
+<P>
+Clark's Garage © 1998<P>
+<HR WIDTH="95%" ALIGN=CENTER><P>
+</BODY>
+</HTML>
